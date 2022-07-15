@@ -6,11 +6,13 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using application.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace application.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+
     public class CommentsController : ControllerBase
     {
         private readonly amaliyotContext _context;
@@ -52,11 +54,13 @@ namespace application.Controllers
         // PUT: api/Comments/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
+        [Authorize]
         public async Task<IActionResult> PutComment(int id, Comment comment)
         {
             if (id != comment.Id)
             {
                 return BadRequest();
+                
             }
 
             _context.Entry(comment).State = EntityState.Modified;
@@ -83,6 +87,7 @@ namespace application.Controllers
         // POST: api/Comments
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
+        [Authorize]
         public async Task<ActionResult<Comment>> PostComment(Comment comment)
         {
           if (_context.Comments == null)
@@ -111,6 +116,7 @@ namespace application.Controllers
 
         // DELETE: api/Comments/5
         [HttpDelete("{id}")]
+        [Authorize]
         public async Task<IActionResult> DeleteComment(int id)
         {
             if (_context.Comments == null)
