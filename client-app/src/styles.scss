@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+// colors
+    --primary-color: rgb(255, 0, 0);
+    --secondary-color: rgb(228, 227, 227);
+// text colors
+    --primary-text-color: rgb(139, 139, 139);
+// font sizes
+    --primary-px:100px;
+}
+@import './sass/base';
+@import './sass/variables';
+@import './sass/mixins';
+
