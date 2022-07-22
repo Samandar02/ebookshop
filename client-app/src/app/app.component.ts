@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { Book } from './Models/models';
+import { ApiService } from './Services/api.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,15 +10,20 @@ export class AppComponent implements OnInit {
   /**
    *
    */
-  constructor(private http:HttpClient) {
+  constructor(private apiSvc:ApiService) {
     
   }
   ngOnInit(): void {
-    this.http.get("https://localhost:7154/api/Catigories").subscribe(res=>{
-      this.catigories = res as any[];
+    this.apiSvc.getBooks().subscribe(res=>{
+      console.log(res)
+    })
+    this.apiSvc.getCatrigories().subscribe(res=>{
+      console.log(res)
+    })
+    this.apiSvc.getComments().subscribe(res=>{
+      console.log(res)
     })
   }
   title = 'client-app';
-  catigories:any[] = [];
 
 }
