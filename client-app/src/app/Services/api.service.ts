@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Inject, Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { filter, Observable, of } from 'rxjs';
 import { Book, Catigorie ,Comment} from '../Models/models';
 import { FakeBackend } from './_helpers/fake-backend.service';
 
@@ -28,8 +28,8 @@ export class ApiService {
   //#endregion
 
   //#region CommentsApi
-  getComments(): Observable<Comment[]> {
-    return of(FakeBackend.getComments());
+  getComments(id:number): Observable<Comment[]> {
+    return of(FakeBackend.getComments())
   }
   //#endregion
 }
