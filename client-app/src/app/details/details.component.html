@@ -1,0 +1,47 @@
+<div class="detail">
+    <!-- <div *ngFor="let book of books" class="book">
+        <img [src]="book.img" alt="">
+        <h4>{{book.title }}</h4>
+        <p>{{book.price|currency }}</p>
+        <div class="actions">
+            <a [routerLink]="['detail',book.id]" class="btn">Yuklab olish</a>
+            <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png"/>
+        </div>
+    </div> -->
+    <img [src]="book.img" alt="">
+    <div class="details">
+        <table>
+            <tr>
+                <td><b>Title:</b></td>
+                <td>{{ book.title}}</td>
+            </tr>
+            <tr>
+                <td><b>Authors:</b></td>
+                <td>{{ book.authors}}</td>
+            </tr>
+            <tr>
+                <td><b>Publisher:</b></td>
+                <td>{{book.publisher}}</td>
+            </tr>
+            <tr>
+                <td><b>Pages:</b></td>
+                <td>{{ book.pages}}</td>
+            </tr>
+            <tr>
+                <td><b>Website:</b></td>
+                <td><a [href]="'https://'+book.website">Go to website</a></td>
+            </tr>
+            <tr>
+                <td><b>Price:</b></td>
+                <td>{{book.price}}</td>
+            </tr>
+        </table>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+
+    </div>
+</div>

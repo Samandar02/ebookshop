@@ -1,15 +1,15 @@
 export class Book {
-    constructor(public id: number,
-        public title: string,
-        public authors: string,
-        public publisher: string,
-        public pages: number,
-        public website: string,
-        public price: number,
-        public img: string,
-        public catigorieId: number,
-        public catigorie:any,
-        public comments: any,
+    constructor(public id?: number,
+        public title?: string,
+        public authors?: string,
+        public publisher?: string,
+        public pages?: number,
+        public website?: string,
+        public price?: number,
+        public img?: string,
+        public catigorieId?: number,
+        public catigorie?:any,
+        public comments?: any,
         ) {
 
     }

@@ -1,0 +1,25 @@
+.catigories{
+    height: 85vh;
+    float: left;
+    h2{
+        padding-top: 36px;
+    }
+    user-select: none;
+    margin-top: 3px;
+    background-color: var(--secondary);
+    border-radius: var(--radius-size) var(--radius-size) 0 0;
+    width: 25%;
+    color: var(--secondary-d);
+    text-align: center;
+    ul{
+        padding-top: 12px;
+        li{
+            &:first-child{
+                border-radius: var(--radius-size) var(--radius-size) 0 0;
+            }
+            a{
+                color: var(--secondary-d);
+            }
+        }
+    }
+}

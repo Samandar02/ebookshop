@@ -1,0 +1,11 @@
+<div class="books">
+    <div *ngFor="let book of books" class="book">
+        <img [src]="book.img" alt="">
+        <h4>{{book.title }}</h4>
+        <p>{{book.price|currency }}</p>
+        <div class="actions">
+            <a [routerLink]="['detail',book.id]" class="btn">Yuklab olish</a>
+            <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png"/>
+        </div>
+    </div>
+</div>

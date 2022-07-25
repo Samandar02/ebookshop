@@ -1,0 +1,31 @@
+.detail{
+    padding-left: 12px;
+    padding-top: 13px;
+    img{
+        width: 300px;
+        height: 300px;
+        object-fit: contain;
+        float: left;
+        &::after{
+            display: inline-block;
+            clear: both;
+        }
+    }
+    .details{
+        float: left;
+        table{
+            tr{
+                td{
+                    padding: 12px 18px;
+                    a{
+                        color: var(--secondary-d);
+                    }
+                }
+            }
+        }
+        &::after{
+            display: inline-block;
+            clear: both;
+        }
+    }
+}

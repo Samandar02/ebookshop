@@ -1,7 +1,22 @@
 nav{
     .nav-header{
-        background-color:var(--secondary-color);
-        color: var(--primary-text-color);
-        font-size: var(--primary-px);
+        padding: 61px 12px 12px 12px;
+        border-radius: 0 0 var(--radius-size) var(--radius-size);
+        background-color:var(--secondary);
+        color: var(--secondary-d);
+        display: flex;
+        justify-content: end;
+        .nav-items{
+            width: 40%;
+            ul{
+                display: flex;
+                justify-content: end;
+                li{
+                    padding: 7px 9px;
+                    margin: 3px 6px;
+                    display: inline-block;
+                }
+            }
+        }
     }
 }

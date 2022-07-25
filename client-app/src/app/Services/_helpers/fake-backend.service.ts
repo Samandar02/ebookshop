@@ -119,7 +119,9 @@ export class FakeBackend {
   public static getBooks() {
     return (this.books)
   }
-
+  public static getBook(id:number) {
+    return (this.books.find(i=>i.id == id));
+  }
   public static getCatigories() {
     return this.catigories
   }

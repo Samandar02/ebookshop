@@ -1,0 +1,41 @@
+.books{
+    color: var(--secondary-d);
+    width: 73%;
+    float: left;
+    border-radius: var(--radius-size) var(--radius-size) 0 0;
+    height: 85vh;
+    margin-top: 3px;
+    margin-left: 6px;
+    padding: 18px;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-wrap: wrap;    
+    .book{
+        height: 260px;
+        width: 163px;
+        margin: 3px;
+        padding: 4px;
+        border-radius: var(--radius-size);
+        text-align: center;
+        .actions{;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            img{
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+            }
+        }
+        img{
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+            border-radius: var(--radius-size);
+        }
+        &:hover{
+            background-color: var(--secondary);
+        }
+    }
+}
