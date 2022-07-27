@@ -9,10 +9,7 @@ import { CatigoriesComponent } from './catigories/catigories.component';
 import { BooksComponent } from './books/books.component';
 import { DetailsComponent } from './details/details.component';
 import { RouterModule, Routes } from '@angular/router';
-let routes:Routes = [
-  {path:"",component:BooksComponent},
-  {path:"detail/:id",component:DetailsComponent}
-]
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +22,6 @@ let routes:Routes = [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    RouterModule.forRoot(routes)
   ],
   bootstrap: [AppComponent]
 })

@@ -32,4 +32,13 @@
     &:active{
         transform: scale(.9);
     }
+    &-none{
+        &:hover{
+            background-color: var(--secondary-l);
+            border-bottom: none;
+        }
+        &:active{
+            transform: scale(.9);
+        }
+    }
 }

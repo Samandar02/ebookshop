@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Route, Router } from '@angular/router';
 import { Book } from '../Models/models';
 import { ApiService } from '../Services/api.service';
 
@@ -9,10 +10,19 @@ import { ApiService } from '../Services/api.service';
 })
 export class BooksComponent implements OnInit {
 
-  constructor(private apiSvc:ApiService) { }
+  constructor(private apiSvc:ApiService,private route:ActivatedRoute) { }
   books:Book[] = [];
+  catid:number = -1;
   ngOnInit(): void {
-    this.apiSvc.getBooks().subscribe(books=>this.books = books);
+   this.route.queryParams.subscribe(id=>{
+      this.catid = id['catigorie'] ;
+    })
+    
+    this.apiSvc.getBooks().subscribe(books=>{
+      this.books = books as Book[]
+    })
+    
+    
   }
 
 }

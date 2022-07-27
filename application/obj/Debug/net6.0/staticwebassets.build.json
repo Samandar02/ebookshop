@@ -1,11 +1,88 @@
 {
   "Version": 1,
-  "Hash": "tOBpzqZFIY8cAZWGeppo2vWDPgVEfu0b5c+ztPWq4Vg=",
+  "Hash": "tPLhHj2f1tf6N0Jly0JG6y4titepG8FPxxvv1eFPL5c=",
   "Source": "application",
   "BasePath": "_content/application",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "application\\wwwroot",
+      "Source": "application",
+      "ContentRoot": "C:\\repositories\\ebookshop\\application\\wwwroot\\",
+      "BasePath": "_content/application",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\repositories\\ebookshop\\application\\wwwroot\\uploads\\Clean Code.pdf",
+      "SourceId": "application",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\repositories\\ebookshop\\application\\wwwroot\\",
+      "BasePath": "_content/application",
+      "RelativePath": "uploads/Clean Code.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\Clean Code.pdf"
+    },
+    {
+      "Identity": "C:\\repositories\\ebookshop\\application\\wwwroot\\uploads\\DownloadFile.png",
+      "SourceId": "application",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\repositories\\ebookshop\\application\\wwwroot\\",
+      "BasePath": "_content/application",
+      "RelativePath": "uploads/DownloadFile.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\DownloadFile.png"
+    },
+    {
+      "Identity": "C:\\repositories\\ebookshop\\application\\wwwroot\\uploads\\ms_sql_2005_c_v2.pdf",
+      "SourceId": "application",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\repositories\\ebookshop\\application\\wwwroot\\",
+      "BasePath": "_content/application",
+      "RelativePath": "uploads/ms_sql_2005_c_v2.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\ms_sql_2005_c_v2.pdf"
+    },
+    {
+      "Identity": "C:\\repositories\\ebookshop\\application\\wwwroot\\uploads\\The Pragmatic Programmer ( PDFDrive ).pdf",
+      "SourceId": "application",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\repositories\\ebookshop\\application\\wwwroot\\",
+      "BasePath": "_content/application",
+      "RelativePath": "uploads/The Pragmatic Programmer ( PDFDrive ).pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\The Pragmatic Programmer ( PDFDrive ).pdf"
+    }
+  ]
 }

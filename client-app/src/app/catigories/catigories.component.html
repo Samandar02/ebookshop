@@ -1,6 +1,6 @@
 <div class="catigories">
     <h2>Bo'limlar</h2>
     <ul>
-        <li class="select" *ngFor="let cat of catigoeies"><a href="">{{cat.catigorieName}}</a></li>
+        <li (click)="getAbout(cat.id)" class="select" *ngFor="let cat of catigoeies"><a [routerLink]="['']" [queryParams]="{catigorie:cat.id}">{{cat.catigorieName}}</a></li>
     </ul>
 </div>

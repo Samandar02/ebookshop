@@ -1,13 +1,4 @@
 <div class="detail">
-    <!-- <div *ngFor="let book of books" class="book">
-        <img [src]="book.img" alt="">
-        <h4>{{book.title }}</h4>
-        <p>{{book.price|currency }}</p>
-        <div class="actions">
-            <a [routerLink]="['detail',book.id]" class="btn">Yuklab olish</a>
-            <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png"/>
-        </div>
-    </div> -->
     <img [src]="book.img" alt="">
     <div class="details">
         <table>
@@ -36,12 +27,22 @@
                 <td>{{book.price}}</td>
             </tr>
         </table>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
+        <div class="comments">
+            <div class="comment" *ngFor="let comment of comments" class="comment">
+                <div class="text">
+                    <p>{{comment.text}}</p>
+                </div>
+                <div class="actions">
+                    <p (click)="add(comment.id)" class="circ">+</p>
+                    <p class="circ">{{comment.raiting}}</p>
+                    <p (click)="substract(comment.id)" class="circ">-</p>
+                </div>
+            </div>
+            <div class="write-comment">
+                <textarea name="" #text id="" cols="30" rows="10"></textarea>
+                <button (click)="addComment(text.value)" class="btn">Add a comment</button>
+            </div>
+        </div>
 
     </div>
 </div>

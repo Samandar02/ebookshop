@@ -22,9 +22,10 @@ export class ApiService {
   getBooks(): Observable<Book[]> {
     return of(FakeBackend.getBooks());
   }
-  public getBook(id:number) {
-    return of(FakeBackend.getBook(id));
+  getBook(){
+    return of(FakeBackend.books[0])
   }
+
   //#endregion
 
   //#region CommentsApi

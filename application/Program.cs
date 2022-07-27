@@ -46,7 +46,7 @@ app.UseCors(conf=>conf
                     .AllowAnyOrigin()
                     .AllowAnyHeader()
                     .AllowAnyMethod());
-
+app.UseFileServer();
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
